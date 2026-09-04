@@ -6,17 +6,19 @@ import java.util.Scanner;
 public class Question9 {
     public static void main(String[]args){
         try {
+            // Open the numbers.txt file
             Scanner file = new Scanner (new File ("numbers.txt"));
 
             long positiveSum = 0, negativeSum = 0;
             long positiveCount = 0, negativeCount = 0;
-
+               
+            // Read each number from the file
             while (file.hasNextInt()){
                 int num = file.nextInt();
-                if (num > 0){
+                if (num > 0){// Add positive numbers
                     positiveSum += num;
                     positiveCount++;
-                } else if (num < 0){
+                } else if (num < 0){// Add negative numbers
                     negativeSum += num;
                     negativeCount++;
                 }

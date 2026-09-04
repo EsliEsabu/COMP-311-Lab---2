@@ -4,9 +4,11 @@ public class Question6 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
+        // Ask the user for a day number
         System.out.print("Enter a number (1-7): ");
         int day = input.nextInt();
 
+        //  finding  the day using switch statement
         switch (day){
             case 1: System.out.println("Monday"); break;
            case 2: System.out.println("Tuesday"); break;
